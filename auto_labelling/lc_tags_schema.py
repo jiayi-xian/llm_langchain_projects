@@ -44,7 +44,7 @@ from langchain.chains import create_tagging_chain, create_tagging_chain_pydantic
 from langchain.chat_models import ChatOpenAI
 
 # LLM
-llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-0613", openai_api_key="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")
+llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-0613", openai_api_key="your api keys")
 chain = create_tagging_chain(schema, llm)
 inp = "What is my balance?"
 chain.run(inp)
